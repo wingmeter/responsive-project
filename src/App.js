@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import NewNavbar from "./components/NewNavbar/NewNavbar";
+import { BrowserRouter } from "react-router-dom";
+// import Sidebar from "./components/NewNavbar/Sidebar/Sidebar";
+import Home from "./pages/Home/Home";
+import AdminHeader from './Headers/AdminHeader/AdminHeader'
+import UserHeader from './Headers/UserHeader/UserHeader'
+import Dropdown from './components/Dropdown'
+import GoogleSearchInput from "./components/UI/GoogleSearchInput";
+import SearchInput from "./components/UI/Searchpanel";
+// import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        {/* <Home /> */}
+        {/* <AdminHeader /> */}
+        <UserHeader />
+        {/* <GoogleSearchInput /> */}
+        {/* <Dropdown /> */}
+        {/* <SearchInput /> */}
+      </BrowserRouter>
+    </>
   );
 }
 
